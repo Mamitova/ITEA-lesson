@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #433A5E;
+        }
+        * {
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+           
+        }
+        .cyan-text,
+        .nav a {
+            color: aqua;
+        }
+        .white-text {
+            color: white;
+        }
+        .nav {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 50px;
+            align-items: center;
+        }
+        .nav li  {
+            display: inline-block;
+            padding-left: 10px;
+            padding-right: 10px;
+        } 
+
+        .nav a {
+            text-decoration: none;
+        }
+
+        .logo-text {
+            font-size: 32px;
+            letter-spacing: 5px;
+        }
+        .main-section {
+            background: #6A13EB;
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
+        
+        .main-section-img {
+            display: block;
+            width: 100%;
+
+        }
+        .list-user {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .list-user li {
+            margin-bottom: 20px;
+            font-size: 16px;
+        }
+        .about-section {
+            margin-top: 60px;
+            margin-bottom: 60px;
+        }
+        .violet-section {
+            background: #6A13EB;
+            background-image: url(img/credo-bg.png);
+            padding-top: 80px;
+            padding-bottom: 80px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .conteiner {
+            width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        h1 {
+            font-size: 40px;
+        }
+        h2 {
+            font-size: 40px;
+            color: #000;
+            margin-top: 0;
+        }
+        h4 {
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+    
+        i {
+            font-size: 30px;
+        }
+
+        .about-text {
+            font-size: 18px;
+            line-height: 1.7;
+            marg
+            in-bottom: 40px;
+        }
+
+        .autor-blok {
+            display: flex;
+            align-items: flex-end;
+            padding: 30px 60px;
+            min-height: 500px;
+            background-image: url(img/alps.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            box-shadow: 0px -120px 50px 0px rgb(0 0 0 / 80%) inset;
+        }
+        .autor-blok p {
+            margin: 0;
+            line-height: 1.7;
+        }
+
+        .img-box  {
+            display: flex;
+            justify-content: space-between;
+
+            
+        }
+        .my-img {
+            border-radius: 50%;
+        } 
+        .checkmark-list,
+        .green-checkmark {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+
+        }
+        .green-checkmark {
+            column-count: 2;
+        }
+        .checkmark-list li {
+            background: url(img/icon-ok.png) no-repeat center left;
+            min-height: 60px;
+            padding-left: 80px;
+            padding-top: 20px;
+        } 
+        .green-checkmark li {
+            display: flex;
+            align-items: center;
+            background: url(img/icon-ok-2.png) no-repeat center left;
+            min-height: 65px;
+            padding-left: 80px;
+            width: 100%;  
+
+        }
+        #main-form {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+
+        #main-form input,
+        #main-form textarea {
+            padding: 20px;
+            margin-bottom: 30px;
+            font-size: 22px;
+            font-family: Arial, sans-serif;
+            font-weight: 700;
+            outline: none;
+            border: none;
+            border: 3px solid #43bbf3;
+            width: 100%;
+
+        }
+        #main-form textarea {
+            height: 150px;
+        }
+        #main-form #submit {
+            width: 300px;
+            background-color: #43bbf3;
+            color: blue;
+            cursor: pointer;
+
+        }
+        
+        .botton {
+            width: 1100px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: right;
+        }
+        .to-top {
+            position: fixed;
+            right: 100px;
+            bottom: 90px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 70px;
+            min-height: 70px;
+            background-color: #43bbf3;
+            color: blue;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 30px;
+            font-weight: 700;
+                  
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="main-section" id="top">
+        <div class="conteiner">
+               
+            <ul class="cyan-text nav">
+                <li>
+                    <span class="cyan-text logo-text">Галина <br> Мамітова</span>
+                </li>
+                <li> <a href="#work">Досвід роботи</a></li>
+                <li> <a href="#tech_skills"> Tech Skills</a></li>
+                <li> <a href="#soft_skills"> Soft Skills</a></li>
+                <li> <a href="#violet"> Мої захоплення</a></li>
+                <li> <a href="#contact"> Контакти</a></li>
+            </ul>
+            
+            <div class="autor-blok">
+                <p class="white-text">
+                    Юрист. Вивчаю Front End. Хочу змінити життя.
+                </p>
+            </div>
+                        
+            <h1 class="white-text">Junior Front End</h1>
+        </div>
+        <!-- conteiner -->
+    </div>
+    <!-- main-section -->
+
+    <div class="about-section" id="work"> 
+        <div class="conteiner">
+            <h2>Досвід роботи</h2>
+            <ol class="list-user">
+                <li>
+                    <b>2005-2018 рр</b>  - Верховний Суд - помічник судді
+                </li>
+                <li>
+                    <b>2018 р. - по сьогодні</b>  - помічник нотаріуса
+                </li>
+            </ol>
+        </div>
+    </div> 
+    <!-- about-section -->
+
+    <div class="about-section" id="tech_skills">
+        <div class="conteiner">
+            <h2>Tech Skills</h2>
+            <ul class="checkmark-list">
+                <li>
+                    <h4>HTML5</h4>
+                </li>
+                <li>
+                    <h4>CSS</h4>
+                </li>
+                <li>
+                    <h4>GIT</h4>
+                </li>
+                <li>
+                    <h4>JavaScript</h4>
+                </li>
+                <li>
+                    <h4>React.js</h4>
+                </li>
+            </ul>
+        </div>
+    </div>  
+      <!-- Tech Skills -->
+    <div class="about-section" id="soft_skills">
+        <div class="conteiner">
+            <h2>Soft Skills</h2>
+            <ul class="green-checkmark">
+                <li>Scrum</li>
+                <li>Agile</li>
+                <li>GTD</li>
+                <li>Teamwork</li>
+            </ul>
+        </div>
+    </div>
+    <!-- Soft Skills -->
+
+    <div class="violet-section" id="violet">
+        <div class="conteiner">
+            <h2 class="white-text">Мої принципи роботи</h2>
+            <p class="white-text">
+                <i>"Не идеальный результат лучше чем идеальное бездействие"</i> 
+            </p>
+        </div>
+    </div>
+    <!-- violet-section -->
+    
+    <div class="about-section">
+        <div class="conteiner">
+            <h2>Про себе</h2>
+            <p class="about-text">
+                Люблю активний відпочинок. Займаюся альпінізмом. Зі своєю командою підкорили вершини Альп, Кавказу, Північного Тянь-Шаню та ін. Люблю мандрувати, знайомитись з новими друзями та вчитися новому.
+            </p>
+            <div class="img-box">
+                <div><img src="img/asia.jpg" width="200" alt="image1" class="my-img"></div>
+                <div><img src="img/kazahstain.jpg" width="200" alt="image2" class="my-img"></div>
+                <div><img src="img/tatry.jpg" width="200" alt="image3" class="my-img"></div>
+            </div>
+        </div> 
+    </div>    
+       <!-- conteiner -->
+    
+    <div class="about-section contact-section" id="contact">
+        <div class="conteiner">
+            <h2>Контакт</h2>
+            <form action="" method="post" id="main-form" >
+                <input type="text" name="name" placeholder="ПІБ">
+                <input type="mail" name="email" placeholder="Email">
+                <textarea name="message" placeholder="Повідомлення"></textarea>
+                <input type="submit" value="Відправити" id="submit">
+            </form>
+            
+        </div>
+        
+    </div>
+    <!-- conteiner -->
+    <div class="botton">
+        <a href="#top" class="to-top">/\</a>
+    </div>
+
+
+</body>
+</html>
